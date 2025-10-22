@@ -8,9 +8,7 @@ SERVER_PORT = 5005          # Server-Port
 NUM_VALUES = 5              # Anzahl 32-bit ints pro Paket
 INTERVAL = 0.001            # Pause zwischen Sends / Sendeintervall 
 
-# TCP Socket erstellen und verbinden
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.connect((SERVER_IP, SERVER_PORT))
 
 counter = 1
 print(f"Client sendet {NUM_VALUES} Werte an {SERVER_IP}:{SERVER_PORT}")

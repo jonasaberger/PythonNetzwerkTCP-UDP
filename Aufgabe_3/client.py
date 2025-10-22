@@ -22,7 +22,7 @@ try:
 
         # https://www.geeksforgeeks.org/python/struct-pack-in-python/
         data = struct.pack('<' + 'i' * NUM_VALUES, *values)
-        sock.sendall(data)   # sendall stellt sicher, dass alle Bytes gesendet werden
+        sock.sendall(data)   # sendall stellt sicher dass alle Bytes gesendet werden
         counter += 1
         time.sleep(INTERVAL)
 

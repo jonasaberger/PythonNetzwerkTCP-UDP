@@ -26,7 +26,7 @@ def handle_client(client_socket, client_address):
             seq = values[0]          # erste Integer = Sequenznummer
             received_packets += 1
 
-            # Wenn Lücke in der Sequenz, als verloren zählen
+            # Wenn Lücke in der Sequenz => als verloren zählen
             if seq != expected_counter:
                 lost_packets += seq - expected_counter
 
